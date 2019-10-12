@@ -17,11 +17,45 @@ h1,h2,h3,h4,h5,h6{
   letter-spacing: 0.25rem !important;
 }
 
-.textOrange{
+.text-orange{
   color: var(--mainOrange)
 }
 .cart-icon{
   cursor: pointer;
   color: var(--mainOrange);
   font-size: 2rem;
+}
+
+.default-background{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(244,201,93,1), rgba(244,201,93,.5));
+  background-position: center;
+  background-size: cover;
+}
+
+.about-background{
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(244,201,93,1), rgba(244,201,93,.5));
+  background-position: center;
+  background-size: cover;
+}
+.btn-yellow{
+  color: var(--mainOrange);
+  border-color: var(--mainOrange);
+
+}
+
+.btn-yellow:hover{
+  background: var(--mainOrange);
+  color: var(--mainDark);
+
+}
+.footer{
+  background: var(--mainBrown);
 }
