@@ -21,7 +21,7 @@ export default class Navbar extends Component {
             },{
                 id: 3,
                 path: '/cart',
-                text: <FaCartArrowDown className='cart-icon'/>
+                text: <FaCartArrowDown className='cart-icon snipcart-checkout'/>
             }
         ]
     }
@@ -40,7 +40,7 @@ export default class Navbar extends Component {
                     <div className={this.state.css}>
                         <ul className="navbar-nav mx-auto">
                             {this.state.links.map(link =>{
-                                   return(<li key={link.id} className='nav-item ml-5'>
+                                   return(<li key={link.id} className='nav-item mx-5'>
                                         <Link to={link.path} className='nav-Link text-capitalize text-orange'>{link.text}</Link>
                                         </li>);
                                 })

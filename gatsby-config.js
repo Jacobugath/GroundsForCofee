@@ -9,11 +9,15 @@ module.exports = {
   },
   plugins: [
     {
+			resolve: 'gatsby-plugin-snipcart',
+			options: {
+				apiKey: 'MzUyOWE3MjQtMDY3My00OGY1LTg1NDYtOThiY2ZhNzc2OTRiNjM3MDczOTM4NzE5Nzk2NTcz'
+			}
+		},
+    {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `hwvaqsuc3c9z`,
-        // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: `hwvaqsuc3c9z`,        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     `gatsby-plugin-react-helmet`,
